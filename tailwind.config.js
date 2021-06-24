@@ -6,10 +6,10 @@ module.exports = {
     // To extend the color palette (though this can also be done by adding additional colors to colors object)
     extend: {
       colors: {
-        primary: { ...colors.pink, ...{ DEFAULT: colors.pink['500'] } },
-        secondary: { ...colors.cyan, ...{ DEFAULT: colors.cyan['500'] } },
-        dark: { ...colors.trueGray, ...{ DEFAULT: colors.black, 950: '#080808' } },
-        light: { ...colors.sky, ...{ DEFAULT: colors.sky['50'] } }
+        primary: { ...colors.amber, ...{ DEFAULT: colors.amber['500'] } },
+        secondary: { ...colors.orange, ...{ DEFAULT: colors.orange['500'] } },
+        dark: { ...colors.warmGray, ...{ DEFAULT: colors.warmGray[900] } },
+        light: { ...colors.yellow, ...{ DEFAULT: colors.yellow['50'] } }
       },
       // To add fonts
       fontFamily: {

@@ -1,7 +1,9 @@
 <template lang='pug'>
 header
-  span.py-24
-    NuxtLink(to='/') Free as in Beer
+  div
+    NuxtLink(to='/')
+      NuxtImg(v-if='$colorMode.value === `dark`' src='/freeasinbeer_dark.png' width='400px')
+      NuxtImg(v-else src='/freeasinbeer.png' width='400px')      
   div
     nav
       ul
@@ -29,8 +31,8 @@ export default {
 <style lang='postcss' scoped>
 header {
   @apply flex flex-col justify-center py-5 px-4;
-  & > span:first-of-type {
-    @apply block w-min m-auto text-7xl sm:text-9xl text-black dark:text-white font-poster;
+  & > div:first-of-type {
+    @apply m-auto;
   }
   & > div {
     @apply flex justify-center;
