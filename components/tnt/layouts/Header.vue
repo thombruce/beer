@@ -19,6 +19,10 @@ export default {
     return {
       items: [
         {
+          title: 'Software',
+          to: '/software'
+        },
+        {
           title: 'Credits',
           to: '/credits'
         }
