@@ -1,14 +1,31 @@
+import tnt from './tnt.config.js'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  // We could... create and import a tnt.json file and utilise its values here... and elsewhere throughout the file.
+  env: {
+    siteTitle: tnt.title,
+    siteDescription: tnt.description,
+    baseUrl: (process.env.NODE_ENV === 'production' ? tnt.url : 'http://localhost:3000'),
+    siteImg: tnt.image
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'beer',
+    title: tnt.title,
+    titleTemplate: `%s | ${tnt.title}`,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: tnt.description },
+      { hid: 'og:site_name', property: 'og:site_name', content: tnt.title },
+      { hid: 'og:title', property: 'og:title', content: tnt.title },
+      { hid: 'og:description', property: 'og:description', content: tnt.description },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: `${tnt.url}/` },
+      { hid: 'og:image', property: 'og:image', content: `${tnt.url}${tnt.image}` }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -28,6 +45,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@thombruce/tnt'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
