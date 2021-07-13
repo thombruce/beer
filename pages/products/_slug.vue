@@ -8,7 +8,7 @@ export default {
   async asyncData ({ $content, redirect, query, params }) {
     const slug = params.slug
 
-    const article = await $content('software', slug)
+    const article = await $content('products', slug)
       .where({ draft: { $ne: true } })
       .fetch()
 
