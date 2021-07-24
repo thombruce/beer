@@ -1,6 +1,8 @@
 ---
 title: Blender
 createdAt: 2021-07-13T17:22:14Z
+categories:
+  - Design
 alternativeTo:
   - Maya
 ---
