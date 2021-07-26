@@ -1,0 +1,41 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "items": [
+        {
+            "id": "https://beer.thombruce.com/products/airtable",
+            "url": "https://beer.thombruce.com/products/airtable",
+            "title": "Airtable",
+            "date_modified": "2021-07-24T16:21:32.000Z"
+        },
+        {
+            "id": "https://beer.thombruce.com/products/kenney-assets",
+            "url": "https://beer.thombruce.com/products/kenney-assets",
+            "title": "Kenney Game Assets",
+            "date_modified": "2021-07-24T16:07:46.000Z"
+        },
+        {
+            "id": "https://beer.thombruce.com/products/scribus",
+            "url": "https://beer.thombruce.com/products/scribus",
+            "title": "Scribus",
+            "date_modified": "2021-07-13T17:22:14.000Z"
+        },
+        {
+            "id": "https://beer.thombruce.com/products/inkscape",
+            "url": "https://beer.thombruce.com/products/inkscape",
+            "title": "Inkscape",
+            "date_modified": "2021-07-13T17:22:14.000Z"
+        },
+        {
+            "id": "https://beer.thombruce.com/products/gimp",
+            "url": "https://beer.thombruce.com/products/gimp",
+            "title": "GIMP",
+            "date_modified": "2021-07-13T17:22:14.000Z"
+        },
+        {
+            "id": "https://beer.thombruce.com/products/blender",
+            "url": "https://beer.thombruce.com/products/blender",
+            "title": "Blender",
+            "date_modified": "2021-07-13T17:22:14.000Z"
+        }
+    ]
+}

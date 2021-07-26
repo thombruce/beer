@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/categories", {data:[{slug:"categories",page:[{slug:"productivity",title:"Productivity"},{slug:"design",title:"Design"},{slug:"assets",title:"Assets"}],_img:{"/_ipx/freeasinbeer.png?w=400":"\u002F_nuxt\u002Fimage\u002F48e788.png"}}],fetch:{},mutations:void 0});
