@@ -4,7 +4,7 @@ div
     header
       NuxtImg(v-if='page.image' :src='page.image' width='100vw')
       h1 {{ page.title }}
-      time(:datetime='page.createdAt') {{ page.createdAt }}
+      time(:datetime='page.date') {{ page.date }}
 
     div(:class='page.container')
       NuxtContent(:document='page')

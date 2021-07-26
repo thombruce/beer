@@ -8,7 +8,7 @@ export default {
   async asyncData ({ $content }) {
     const articles = await $content('products')
       .where({ $and: [{ draft: { $ne: true } }, { redirect: { $type: 'undefined' } }] })
-      .sortBy('createdAt', 'desc')
+      .sortBy('date', 'desc')
       .fetch()
       .catch(() => {})
 

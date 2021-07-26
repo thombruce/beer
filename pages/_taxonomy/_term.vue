@@ -8,7 +8,7 @@ article
       header
         h2
           NuxtLink(:to='article') {{ article.title }}
-        time(:datetime='article.createdAt') {{ article.createdAt }}
+        time(:datetime='article.date') {{ article.date }}
       div
         p {{ article.description }}
 </template>
@@ -27,7 +27,7 @@ export default {
           { $or: [{ [taxonomy]: { $contains: term.title } }, { [taxonomy]: { $eq: term.title } }] }
         ]
       })
-      .sortBy('createdAt', 'desc')
+      .sortBy('date', 'desc')
       .fetch()
 
     return { term, articles }

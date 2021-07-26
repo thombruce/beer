@@ -1,6 +1,6 @@
 ---
 title: Scribus
-createdAt: 2021-07-13T17:22:14Z
+date: 2021-07-13T17:22:14Z
 categories:
   - Design
 alternativeTo:

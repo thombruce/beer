@@ -14,7 +14,7 @@ export default {
 
     let articles = await $content('', { deep: true })
       .where({ $and: [{ draft: { $ne: true } }, { dir: { $ne: '/' } }, { redirect: { $type: 'undefined' } }] })
-      .sortBy('createdAt', 'desc')
+      .sortBy('date', 'desc')
       .fetch()
       .catch(() => {})
     

@@ -1,6 +1,6 @@
 ---
 title: Airtable
-createdAt: 2021-07-24T16:21:32Z
+date: 2021-07-24T16:21:32Z
 categories:
   - Productivity
 alternativeTo:
