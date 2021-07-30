@@ -19,6 +19,10 @@ export default {
     return {
       items: [
         {
+          title: 'Blog',
+          to: '/blog'
+        },
+        {
           title: 'Products',
           to: '/products'
         },
