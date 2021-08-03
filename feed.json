@@ -2,6 +2,36 @@
     "version": "https://jsonfeed.org/version/1",
     "items": [
         {
+            "id": "https://beer.thombruce.com/products/unsplash",
+            "url": "https://beer.thombruce.com/products/unsplash",
+            "title": "Unsplash",
+            "date_modified": "2021-08-03T16:47:37.000Z"
+        },
+        {
+            "id": "https://beer.thombruce.com/products/storyset",
+            "url": "https://beer.thombruce.com/products/storyset",
+            "title": "Storyset",
+            "date_modified": "2021-08-03T16:47:37.000Z"
+        },
+        {
+            "id": "https://beer.thombruce.com/products/hero-patterns",
+            "url": "https://beer.thombruce.com/products/hero-patterns",
+            "title": "Hero Patterns",
+            "date_modified": "2021-08-03T16:47:37.000Z"
+        },
+        {
+            "id": "https://beer.thombruce.com/products/hero-icons",
+            "url": "https://beer.thombruce.com/products/hero-icons",
+            "title": "Hero Icons",
+            "date_modified": "2021-08-03T16:47:37.000Z"
+        },
+        {
+            "id": "https://beer.thombruce.com/products/coolicons",
+            "url": "https://beer.thombruce.com/products/coolicons",
+            "title": "coolicons",
+            "date_modified": "2021-08-03T16:47:37.000Z"
+        },
+        {
             "id": "https://beer.thombruce.com/products/airtable",
             "url": "https://beer.thombruce.com/products/airtable",
             "title": "Airtable",
