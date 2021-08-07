@@ -24,7 +24,7 @@ export default [
           date: new Date(post.date),
           description: post.description,
           // content: post.body,
-          image: `${tnt.url}${post.image ? post.image : process.env.siteImg}`
+          image: `${tnt.url}${post.image ? post.image : tnt.image}`
         })
       })
     }, // The create function (see below)
