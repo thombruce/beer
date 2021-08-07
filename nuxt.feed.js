@@ -23,7 +23,8 @@ export default [
           // author: post.authors,
           date: new Date(post.date),
           description: post.description,
-          // content: post.body
+          // content: post.body,
+          image: `${tnt.url}${post.image ? post.image : process.env.siteImg}`
         })
       })
     }, // The create function (see below)
