@@ -6,7 +6,7 @@ header
       // NuxtImg(v-else src='/freeasinbeer.png' width='400px')
   .navbar
     nav
-      NuxtLink(v-for='(item, i) in items' :key='i' :to='item.to')
+      NuxtLink.btn.btn-ghost(v-for='(item, i) in items' :key='i' :to='item.to')
         span {{ item.title }}
     TntUIThemeToggle
 </template>
