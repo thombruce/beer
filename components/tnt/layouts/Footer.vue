@@ -42,7 +42,7 @@ export default {
 
 <style lang='postcss' scoped>
 footer {
-  @apply mt-5 py-5 bg-light-100 dark:bg-dark-900;
+  @apply mt-5 py-5 bg-neutral text-neutral-content;
   & .social {
     @apply text-3xl;
     & ul {
@@ -53,9 +53,9 @@ footer {
     }    
   }
   & .copyright {
-    @apply pt-4 text-center text-sm text-gray-400 dark:text-gray-500;
+    @apply pt-4 text-center text-sm;
     & a {
-      @apply text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-400;
+      @apply link;
     }
   }
 }
