@@ -1,23 +1,15 @@
 <template lang='pug'>
-footer
-  .social
-    ul
-      li(v-for='(item, i) in social' :key='i')
-        a(:href='item.to' target='_blank')
-          TntSimpleIcon(:icon='item.icon')
-  .copyright
-    | &copy;
-    |
-    a(href='https://thombruce.com/') Thom Bruce
-    |
-    | 2021 - {{ new Date().getFullYear() }}
+.social(v-if='social')
+  ul
+    li(v-for='(item, i) in social' :key='i')
+      a(:href='item.to' target='_blank')
+        TntSimpleIcon(:icon='item.icon')
 </template>
 
 <script>
 export default {
   data () {
     return {
-      title: this.$nuxt.$options.head.title,
       social: [
         {
           icon: 'facebook',
@@ -41,9 +33,7 @@ export default {
 </script>
 
 <style lang='postcss' scoped>
-footer {
-  @apply mt-5 py-5 bg-neutral text-neutral-content;
-  & .social {
+  .social {
     @apply text-3xl;
     & ul {
       @apply flex justify-center;
@@ -52,11 +42,4 @@ footer {
       }
     }    
   }
-  & .copyright {
-    @apply pt-4 text-center text-sm;
-    & a {
-      @apply link;
-    }
-  }
-}
 </style>
