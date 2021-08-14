@@ -77,6 +77,27 @@
             "title": "Blender",
             "image": "https://beer.thombruce.com/beer.jpg",
             "date_modified": "2021-07-13T17:22:14.000Z"
+        },
+        {
+            "id": "https://beer.thombruce.com/products/windscribe",
+            "url": "https://beer.thombruce.com/products/windscribe",
+            "title": "Windscribe",
+            "image": "https://beer.thombruce.com/beer.jpg",
+            "date_modified": "1970-01-01T00:00:00.000Z"
+        },
+        {
+            "id": "https://beer.thombruce.com/products/vlc",
+            "url": "https://beer.thombruce.com/products/vlc",
+            "title": "VLC",
+            "image": "https://beer.thombruce.com/beer.jpg",
+            "date_modified": "1970-01-01T00:00:00.000Z"
+        },
+        {
+            "id": "https://beer.thombruce.com/products/protonvpn",
+            "url": "https://beer.thombruce.com/products/protonvpn",
+            "title": "ProtonVPN",
+            "image": "https://beer.thombruce.com/beer.jpg",
+            "date_modified": "1970-01-01T00:00:00.000Z"
         }
     ]
 }
