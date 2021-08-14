@@ -1,21 +1,10 @@
 <template lang='pug'>
 div
-  article(v-if='!Array.isArray(page)')
-    header
-      NuxtImg(v-if='page.image' :src='page.image' width='100vw')
-      h1 {{ page.title }}
-      time(:datetime='page.date') {{ page.date }}
-
-    div(:class='page.container')
-      NuxtContent(:document='page')
+  TntContent(v-if='!Array.isArray(page)' :article='page')
   article(v-else)
     header
       h1 {{ slug | titleize }}
-    div
-      article(v-for='term in page')
-        header
-          h2
-            NuxtLink(:to='{ name: `taxonomy-term`, params: { taxonomy: slug, term: term.slug } }') {{ term.title }}
+    TntBlogList(:articles='page')
 </template>
 
 <script>
@@ -25,6 +14,7 @@ export default {
 
     const page = await $content(slug)
       .where({ draft: { $ne: true } })
+      .sortBy('date', 'desc')
       .fetch()
       .catch(async () => {
         const terms = await $taxonomies(slug, '', { deep: true }).all()
