@@ -17,6 +17,6 @@
     "nuxt": "^2.15.8"
   },
   "devDependencies": {
-    "@thombruce/tnt": "https://github.com/thombruce/tnt"
+    "@thombruce/nuxt-tnt": "https://github.com/thombruce/nuxt-tnt"
   }
 }
